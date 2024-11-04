@@ -1,0 +1,22 @@
+.contenedorprincipal {
+
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 100px auto;
+gap: 10px
+}
+
+.grid.item {
+    background-color: gray;
+    border: 2px solid red;
+}
+
+body {
+background-color: aquamarine;
+
+}
+
+.item img {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }

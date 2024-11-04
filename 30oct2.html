@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de HTML Semántico</title>
+  <style>
+    /* Estilos básicos para la estructura */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+    }
+
+    header, nav, main, section, article, aside, footer {
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #ccc;
+    }
+
+    header, footer {
+      background-color: #f4f4f4;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 10px;
+    }
+
+    section, article {
+      grid-column: 1 / 2;
+    }
+
+    aside {
+      grid-column: 2 / 3;
+      background-color: #f9f9f9;
+    }
+
+    footer {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Mi Sitio Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sección Principal</h2>
+      <p>Esta es la sección principal de mi sitio web. Aquí encontrarás información importante y actualizaciones.</p>
+    </section>
+
+    <article>
+      <h2>Artículo Reciente</h2>
+      <p>Este es un artículo reciente que proporciona información detallada sobre un tema específico. Los artículos pueden incluir texto, imágenes, videos y más.</p>
+    </article>
+
+    <aside>
+      <h2>Barra Lateral</h2>
+      <p>Este es contenido adicional que se encuentra en la barra lateral. Puede incluir enlaces, anuncios, o cualquier otra información relevante.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

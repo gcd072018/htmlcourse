@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .item {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  body {
+    background-color: lightblue; /* Replace 'lightblue' with your desired color */
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .item {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: yellow;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Adjust the ratio as needed */
+    grid-gap: 20px;
+  }
+  
+  .item {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: yellow;
+  }
+
+  .item img {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
